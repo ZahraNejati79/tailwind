@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,5 +9,14 @@
   </head>
   <body>
     <h1>tailwind-cli App</h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-8 md:grid-rows-[60px_minmax(500px,_1fr)]"
+    >
+      <div class="bg-red-500 p-4 hidden md:block md:col-span-2 md:row-span-2">
+        side bar
+      </div>
+      <div class="md:col-span-10 bg-blue-500 p-4">sort header</div>
+      <div class="md:col-span-10 bg-pink-500 p-4">product</div>
+    </div>
   </body>
 </html>
